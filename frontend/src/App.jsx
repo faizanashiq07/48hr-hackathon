@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_URL = "";
+const API_URL = "https://48hr-hackathon-6cxq.vercel.app";
 const MAX_QUESTIONS = 15;
 
 function App() {
