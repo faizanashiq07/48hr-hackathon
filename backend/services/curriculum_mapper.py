@@ -36,3 +36,4 @@ def map_candidate_topics(candidate_profile, curriculum):
             mapped.append(curriculum_index[topic])
 
     return mapped
+

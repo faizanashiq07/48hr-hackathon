@@ -32,3 +32,4 @@ for topic in profile["high_effort_areas"]:
 
 print("\nLearning signals:")
 print(profile["learning_signals"])
+

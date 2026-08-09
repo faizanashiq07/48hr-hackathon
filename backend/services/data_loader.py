@@ -14,3 +14,4 @@ def load_candidates():
 def load_curriculum():
     with open(DATA_DIR / "curriculum.json", "r", encoding="utf-8") as file:
         return json.load(file)
+

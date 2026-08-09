@@ -66,3 +66,4 @@ print("Follow-ups:", len(session["follow_ups"]))
 
 print("\nNext topic:")
 print(get_current_topic("test-session"))
+

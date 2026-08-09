@@ -22,3 +22,4 @@ for topic in topics:
     print("Objectives:")
     for objective in topic["objectives"]:
         print(" -", objective)
+

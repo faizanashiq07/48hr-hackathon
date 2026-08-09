@@ -13,3 +13,4 @@ print(candidates["candidates"][0]["member"]["name"])
 
 print("\nFirst curriculum day:")
 print(curriculum["days"][0]["title"])
+

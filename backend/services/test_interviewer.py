@@ -2,6 +2,7 @@ from data_loader import load_candidates, load_curriculum
 from candidate_analyzer import analyze_candidate
 from curriculum_mapper import map_candidate_topics
 from question_planner import build_interview_plan
+from llm_client import generate_interviewer_response
 
 
 candidates = load_candidates()
@@ -21,12 +22,17 @@ plan = build_interview_plan(
     mapped_topics
 )
 
-print("\n===== INTERVIEW PLAN =====")
+current_topic = plan[0]
 
-for index, item in enumerate(plan, start=1):
-    print(f"\nQuestion Area {index}")
-    print("Day:", item["day"])
-    print("Topic:", item["topic"])
-    print("Difficulty:", item["difficulty"])
-    print("Reason:", item["reason"])
+conversation_history = []
+
+
+question = generate_interviewer_response(
+    profile,
+    current_topic,
+    conversation_history
+)
+
+print("\n===== AI INTERVIEWER =====\n")
+print(question)
 

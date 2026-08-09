@@ -43,3 +43,4 @@ def analyze_candidate(candidate):
         "high_effort_areas": high_effort_areas,
         "learning_signals": signals
     }
+

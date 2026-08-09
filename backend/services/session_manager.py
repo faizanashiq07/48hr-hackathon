@@ -76,3 +76,4 @@ def get_current_topic(session_id):
         return None
 
     return session["plan"][index]
+
