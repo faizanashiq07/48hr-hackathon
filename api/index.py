@@ -1,1 +1,12 @@
-from backend.main import app
+import os
+import sys
+
+backend_path = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "backend"
+)
+
+sys.path.insert(0, backend_path)
+
+from main import app
